@@ -10,7 +10,7 @@ interface TestimonialProps {
 const Testimonial: React.FC<TestimonialProps> = ({ quote, author, role }) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md border border-neutral-100">
-      <Quote className="h-8 w-8 text-secondary-600 mb-4" />
+      <Quote className="h-8 w-8 text-qult-blue mb-4" />
       <p className="italic text-neutral-700 mb-4">{quote}</p>
       <div className="mt-4">
         <p className="font-semibold">{author}</p>

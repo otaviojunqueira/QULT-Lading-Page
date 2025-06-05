@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Linkedin, Mail, Phone, MapPin, BookOpen } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -8,8 +8,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <BookOpen className="h-8 w-8 text-secondary-500" />
-              <span className="font-montserrat font-bold text-xl">QULT</span>
+            <img src="/qult-logo.png" alt="QULT Logo" className="h-12 w-auto" onClick={() => window.location.href = '/'}/>
             </div>
             <p className="text-neutral-400 mb-6">
               Consultoria especializada em políticas públicas, captação de recursos 
@@ -24,25 +23,25 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-6">Contato</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <Phone className="h-5 w-5 mr-3 text-secondary-500 shrink-0 mt-0.5" />
+                <Phone className="h-5 w-5 mr-3 text-qult-pink shrink-0 mt-0.5" />
                 <span>(24) 99999-9999</span>
               </li>
               <li className="flex items-start">
-                <Mail className="h-5 w-5 mr-3 text-secondary-500 shrink-0 mt-0.5" />
+                <Mail className="h-5 w-5 mr-3 text-qult-blue shrink-0 mt-0.5" />
                 <span>contato@qult.com.br</span>
               </li>
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 text-secondary-500 shrink-0 mt-0.5" />
+                <MapPin className="h-5 w-5 mr-3 text-qult-green shrink-0 mt-0.5" />
                 <span>Rua José Maria da Cruz, 55/202, Barra Mansa-RJ</span>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-6">Siga-nos</h3>
+            <h3 className="text-lg font-semibold mb-6 hover:text-qult-pink transition-colors">Siga-nos</h3>
             <div className="flex space-x-4 mb-8">
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/qult.culturas/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-primary-800 transition-colors"
@@ -68,7 +67,7 @@ const Footer: React.FC = () => {
               />
               <button 
                 type="submit" 
-                className="px-4 py-2 bg-secondary-600 hover:bg-secondary-700 rounded-r-md text-white font-medium transition-colors"
+                className="px-4 py-2 bg-qult-blue hover:bg-qult-pink/80 rounded-r-md text-white font-medium transition-colors"
               >
                 Assinar
               </button>

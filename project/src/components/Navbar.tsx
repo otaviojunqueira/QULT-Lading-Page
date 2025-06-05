@@ -7,11 +7,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -22,16 +18,18 @@ const Navbar: React.FC = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-        ? 'bg-white shadow-md py-2' 
-        : 'bg-primary-800/90 backdrop-blur-sm py-4'
+        ? 'bg-white/95 backdrop-blur-sm shadow-sm py-4' 
+        : 'bg-transparent py-6'
       }`}
     >
-      <div className="container flex items-center justify-between">
-        <a href="/" className="flex items-center space-x-2">
+      <div className="container flex items-center justify-between relative">
+        <a href="/" className="flex items-center space-x-2 group">
           <img 
             src="/qult-logo.png" 
             alt="QULT Logo" 
-            className={`h-12 w-auto ${isScrolled ? '' : 'brightness-0 invert'}`}
+            className={`h-12 w-auto transition-all duration-300 ${
+              isScrolled ? 'brightness-100' : 'brightness-0 invert'
+            } group-hover:scale-105`}
           />
         </a>
 
@@ -39,52 +37,56 @@ const Navbar: React.FC = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <a 
             href="#sobre" 
-            className={`text-sm font-medium transition-colors ${
+            className={`text-sm font-medium transition-all duration-300 nav-link ${
               isScrolled 
-              ? 'text-neutral-700 hover:text-primary-800' 
-              : 'text-white hover:text-secondary-400'
+              ? 'text-gray-700 hover:text-qult-pink' 
+              : 'text-white hover:text-white/80'
             }`}
           >
             Sobre
           </a>
           <a 
             href="#servicos" 
-            className={`text-sm font-medium transition-colors ${
+            className={`text-sm font-medium transition-all duration-300 nav-link ${
               isScrolled 
-              ? 'text-neutral-700 hover:text-primary-800' 
-              : 'text-white hover:text-secondary-400'
+              ? 'text-gray-700 hover:text-qult-pink' 
+              : 'text-white hover:text-white/80'
             }`}
           >
             Serviços
           </a>
           <a 
             href="#cases" 
-            className={`text-sm font-medium transition-colors ${
+            className={`text-sm font-medium transition-all duration-300 nav-link ${
               isScrolled 
-              ? 'text-neutral-700 hover:text-primary-800' 
-              : 'text-white hover:text-secondary-400'
+              ? 'text-gray-700 hover:text-qult-pink' 
+              : 'text-white hover:text-white/80'
             }`}
           >
             Cases
           </a>
           <a 
-            href="#depoimentos" 
-            className={`text-sm font-medium transition-colors ${
+            href="#diferenciais" 
+            className={`text-sm font-medium transition-all duration-300 nav-link ${
               isScrolled 
-              ? 'text-neutral-700 hover:text-primary-800' 
-              : 'text-white hover:text-secondary-400'
+              ? 'text-gray-700 hover:text-qult-pink' 
+              : 'text-white hover:text-white/80'
             }`}
           >
-            Depoimentos
+            Diferenciais
           </a>
-          <a href="#contato" className="btn btn-primary">
-            Fale Conosco
+          <a 
+            href="#contato" 
+            className="btn btn-primary relative overflow-hidden group"
+          >
+            <span className="relative z-10">Fale Conosco</span>
+            <div className="absolute inset-0 bg-texture-dots bg-dots-sm opacity-20"></div>
           </a>
         </nav>
 
         {/* Mobile Menu Button */}
         <button 
-          className={`md:hidden ${isScrolled ? 'text-primary-800' : 'text-white'}`}
+          className={`md:hidden relative z-10 ${isScrolled ? 'text-gray-700' : 'text-white'}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
         >
@@ -94,42 +96,44 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <nav className="md:hidden bg-white px-4 py-4 shadow-md">
-          <div className="flex flex-col space-y-4">
+        <nav className="md:hidden bg-white/95 backdrop-blur-sm px-4 py-4 shadow-md relative">
+          <div className="absolute inset-0 bg-texture-dots bg-dots-sm opacity-5"></div>
+          <div className="flex flex-col space-y-4 relative z-10">
             <a 
               href="#sobre" 
-              className="text-sm font-medium text-neutral-700 hover:text-primary-800 transition-colors"
+              className="text-sm font-medium text-gray-700 hover:text-qult-pink transition-all duration-300 nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
               Sobre
             </a>
             <a 
               href="#servicos" 
-              className="text-sm font-medium text-neutral-700 hover:text-primary-800 transition-colors"
+              className="text-sm font-medium text-gray-700 hover:text-qult-pink transition-all duration-300 nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
               Serviços
             </a>
             <a 
               href="#cases" 
-              className="text-sm font-medium text-neutral-700 hover:text-primary-800 transition-colors"
+              className="text-sm font-medium text-gray-700 hover:text-qult-pink transition-all duration-300 nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
               Cases
             </a>
             <a 
               href="#depoimentos" 
-              className="text-sm font-medium text-neutral-700 hover:text-primary-800 transition-colors"
+              className="text-sm font-medium text-gray-700 hover:text-qult-pink transition-all duration-300 nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
               Depoimentos
             </a>
             <a 
               href="#contato" 
-              className="btn btn-primary w-full text-center"
+              className="btn btn-primary w-full text-center relative overflow-hidden group"
               onClick={() => setIsMenuOpen(false)}
             >
-              Fale Conosco
+              <span className="relative z-10">Fale Conosco</span>
+              <div className="absolute inset-0 bg-texture-dots bg-dots-sm opacity-20"></div>
             </a>
           </div>
         </nav>

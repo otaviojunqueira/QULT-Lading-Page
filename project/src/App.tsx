@@ -1,10 +1,9 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import SuccessCases from './components/SuccessCases';
-import Testimonials from './components/Testimonials';
+//import Testimonials from './components/Testimonials';
 import Differentials from './components/Differentials';
 import Footer from './components/Footer';
 import AnimatedSection from './components/AnimatedSection';
@@ -27,9 +26,9 @@ function App() {
         <SuccessCases />
       </AnimatedSection>
       
-      <AnimatedSection>
+      {/*<AnimatedSection>
         <Testimonials />
-      </AnimatedSection>
+      </AnimatedSection>*/}
       
       <AnimatedSection>
         <Differentials />
