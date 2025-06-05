@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1E3A8A;
+  --secondary: #CA8A04;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans text-neutral-800 antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-montserrat font-semibold;
+}
+
+.container {
+  @apply px-4 md:px-8 mx-auto max-w-7xl;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.is-visible {
+  @apply animate-fadeIn;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+}
+
+.btn-primary {
+  @apply bg-primary-800 text-white hover:bg-primary-700 px-4 py-3;
+}
+
+.btn-outline {
+  @apply border border-primary-800 text-primary-800 hover:bg-primary-50 px-4 py-3;
+}
+
+.hero-pattern {
+  background-color: #1E3A8A;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232563eb' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg;
+}
