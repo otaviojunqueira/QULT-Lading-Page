@@ -46,8 +46,8 @@ const SuccessCases: React.FC = () => {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Cases de{' '}
-            <span className="bg-gradient-qult-1 bg-clip-text text-transparent">Sucesso</span>
+            Boas{' '}
+            <span className="bg-gradient-qult-1 bg-clip-text text-transparent">Experiências</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Conheça alguns dos nossos projetos de destaque e os resultados alcançados.

@@ -9,15 +9,19 @@ const Hero: React.FC = () => {
         {/* Main Heading */}
         <div className="max-w-4xl animate-float">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Transforme ideias em{' '}
-            <span className="bg-gradient-qult-1 bg-clip-text text-transparent">projetos</span>{' '}
-            <span className="bg-gradient-qult-2 bg-clip-text text-transparent">culturais</span>{' '}
-            de impacto
+            O{' '}
+            <span className="bg-gradient-qult-1 bg-clip-text text-transparent">pensamento</span>{' '}
+            se torna{' '} 
+            <span className="bg-gradient-qult-4 bg-clip-text text-transparent">projeto</span>. Cada{' '}
+            <span className="bg-gradient-qult-3 bg-clip-text text-transparent">ideia</span>
+            uma{' '}
+            <span className="bg-gradient-qult-2 bg-clip-text text-transparent">oportunidade</span>{' '}
+           
           </h1>
           
           <p className="text-lg md:text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
             Consultoria especializada em{' '}
-            <span className="bg-gradient-qult-3 bg-clip-text text-transparent font-medium">
+            <span className="bg-gradient-qult-1 bg-clip-text text-transparent font-medium">
               políticas públicas
             </span>, captação de recursos 
             e produção cultural desde 2007.

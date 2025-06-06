@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
               : 'text-white hover:text-white/80'
             }`}
           >
-            Cases
+            Boas Experiências
           </a>
           <a 
             href="#diferenciais" 
@@ -118,7 +118,7 @@ const Navbar: React.FC = () => {
               className="text-sm font-medium text-gray-700 hover:text-qult-pink transition-all duration-300 nav-link"
               onClick={() => setIsMenuOpen(false)}
             >
-              Cases
+              Boas Experiências
             </a>
             <a 
               href="#depoimentos" 
