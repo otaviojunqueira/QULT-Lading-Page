@@ -6,16 +6,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-      },
-    },
-    sourcemap: false,
+    sourcemap: true
   },
+  base: '/',
   optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
-  base: './',
+    exclude: ['lucide-react']
+  }
 });
