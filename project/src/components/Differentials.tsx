@@ -85,7 +85,7 @@ const Differentials: React.FC = () => {
           <div className="inline-block gradient-border rounded-xl p-8 bg-white/[0.03] backdrop-blur-sm relative overflow-hidden group">
             <div className="absolute inset-0 bg-texture-dots bg-dots-sm opacity-5 group-hover:opacity-10 transition-opacity"></div>
             <div className="relative">
-              <h3 className="text-2xl font-semibold mb-4 text-white">
+              <h3 className="text-2xl font-semibold mb-4 text-black">
                 Pronto para{' '}
                 <span className="bg-gradient-qult-1 bg-clip-text text-transparent">
                   transformar sua ideia
@@ -93,7 +93,7 @@ const Differentials: React.FC = () => {
                 em realidade?
               </h3>
               <p className="text-black-300 mb-6">
-                Conte com a QULT para impulsionar seus projetos culturais e maximizar seus resultados.
+                Conte com a QULT para impulsionar seus projetos culturais.
               </p>
               <a 
                 href="#contato" 

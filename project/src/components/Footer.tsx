@@ -58,20 +58,6 @@ const Footer: React.FC = () => {
               </a>
             </div>
             
-            <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-            <form className="flex">
-              <input 
-                type="email" 
-                placeholder="Seu e-mail" 
-                className="px-4 py-2 bg-neutral-800 rounded-l-md flex-grow focus:outline-none focus:ring-1 focus:ring-secondary-500"
-              />
-              <button 
-                type="submit" 
-                className="px-4 py-2 bg-qult-blue hover:bg-qult-pink/80 rounded-r-md text-white font-medium transition-colors"
-              >
-                Assinar
-              </button>
-            </form>
           </div>
         </div>
         
