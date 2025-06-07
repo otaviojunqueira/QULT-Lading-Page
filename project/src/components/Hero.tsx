@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
             <span className="bg-gradient-qult-1 bg-clip-text text-transparent">pensamento</span>{' '}
             se torna{' '} 
             <span className="bg-gradient-qult-4 bg-clip-text text-transparent">projeto</span>. Cada{' '}
-            <span className="bg-gradient-qult-3 bg-clip-text text-transparent">ideia</span>
+            <span className="bg-gradient-qult-3 bg-clip-text text-transparent">ideia</span>{' '}
             uma{' '}
             <span className="bg-gradient-qult-2 bg-clip-text text-transparent">oportunidade</span>{' '}
            
