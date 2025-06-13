@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
             Diferenciais
           </a>
           <a 
-            href="#contato" 
+            href="https://api.whatsapp.com/send/?phone=5524998165187&text&type=phone_number&app_absent=0" 
             className="btn btn-primary relative overflow-hidden group"
           >
             <span className="relative z-10">Fale Conosco</span>

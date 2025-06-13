@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone className="h-5 w-5 mr-3 text-qult-pink shrink-0 mt-0.5" />
-                <span>(24) 99999-9999</span>
+                <span>(24) 99816-5187</span>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 text-qult-blue shrink-0 mt-0.5" />
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/company/qult-projetos-e-produções-culturais/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-primary-800 transition-colors"

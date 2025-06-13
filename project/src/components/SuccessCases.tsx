@@ -6,6 +6,7 @@ interface CaseStudy {
   description: string;
   value: string;
   imageUrl: string;
+  link: string;
 }
 
 const cases: CaseStudy[] = [
@@ -13,19 +14,22 @@ const cases: CaseStudy[] = [
     title: "Município de Quatis/RJ",
     description: "Aplicação dos recursos da Lei Aldir Blanc.",
     value: "R$ 145 mil",
-    imageUrl: "/cases/festival-quatis.png"
+    imageUrl: "/cases/festival-quatis.png",
+    link: "https://portal.quatis.rj.gov.br/publicacoes.php?id=1637"
   },
   {
     title: "Instituto Toré",
     description: "Projeto patrocinado pela Volkswagen.",
     value: "R$ 2 milhões",
-    imageUrl: "/cases/toré.png"
+    imageUrl: "/cases/toré.png",
+    link: "https://www.instagram.com/p/DCAOnFDNlfi/"
   },
   {
     title: "Circuito 191",
     description: "Evento com 7 mil participantes.",
     value: "R$ 800 mil captados",
-    imageUrl: "/cases/circuito.png"
+    imageUrl: "/cases/circuito.png",
+    link: "https://www.instagram.com/reel/CzAFj1-rpUz/"
   }
 ];
 
@@ -86,7 +90,7 @@ const SuccessCases: React.FC = () => {
                 </p>
 
                 <a 
-                  href="https://www.google.com" 
+                  href={caseStudy.link} 
                   className="inline-flex items-center text-sm text-gray-600 hover:text-qult-pink group/link transition-colors"
                 >
                   <span>Saiba mais</span>

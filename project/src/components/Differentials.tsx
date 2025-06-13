@@ -96,7 +96,7 @@ const Differentials: React.FC = () => {
                 Conte com a QULT para impulsionar seus projetos culturais.
               </p>
               <a 
-                href="#contato" 
+                href="https://api.whatsapp.com/send/?phone=5524998165187&text&type=phone_number&app_absent=0" 
                 className="btn btn-primary inline-flex items-center group"
               >
                 <span>Entre em contato</span>

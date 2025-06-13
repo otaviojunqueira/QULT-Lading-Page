@@ -126,7 +126,7 @@ const Cases: React.FC = () => {
             Quer transformar sua ideia em uma boa experiência também?
           </p>
           <a 
-            href="#contato" 
+            href="https://api.whatsapp.com/send/?phone=5524998165187&text&type=phone_number&app_absent=0" 
             className="btn btn-primary inline-flex items-center group"
           >
             <span>Vamos conversar</span>
